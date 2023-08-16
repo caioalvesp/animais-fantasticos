@@ -45,6 +45,4 @@ export default function fetchAnimais(url, target) {
   // com o total de animais
 
   return criarAnimais();
-
-  fetchAnimais('./animaisapi.json');
 }
