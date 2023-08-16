@@ -34,7 +34,7 @@ export default function fetchAnimais(url, target) {
       const animaisResponse = await fetch(url);
       // Transforma a resposta em json
       const animaisJSON = await animaisResponse.json();
-      animaisJSON.forEach(animal => preencherAnimais(animal));
+      animaisJSON.record.forEach(animal => preencherAnimais(animal));
       animaAnimaisNumero();
     } catch (erro) {
       console.log(erro);
