@@ -8,7 +8,7 @@ import initDropdownMenu from './modules/dropdown-menu.js';
 import initMenuMobile from './modules/menu-mobile.js';
 import initFuncionamento from './modules/funcionamento.js';
 import initFetchAnimais from './modules/fetchAnimais.js';
-import initFetchBitcoin from './modules/fetchBitcoin.js';
+import fetchBitcoin from './modules/fetchBitcoin.js';
 import fetchAnimais from './modules/fetchAnimais.js';
 
 const accordion = new Accordion('[data-anime="accordion"] dt');
@@ -26,7 +26,8 @@ tooltip.init();
 initDropdownMenu();
 initMenuMobile();
 initFuncionamento();
-initFetchBitcoin();
+
 initAnimacaoScroll();
 
 fetchAnimais('../../animaisapi.json', '.numeros-grid');
+fetchBitcoin('https://economia.awesomeapi.com.br/json/daily/BTC-BRL/0', '.btc-preco');
