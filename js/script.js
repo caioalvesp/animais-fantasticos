@@ -29,5 +29,5 @@ initFuncionamento();
 
 initAnimacaoScroll();
 
-fetchAnimais('../../animaisapi.json', '.numeros-grid');
+fetchAnimais('../animaisapi.json', '.numeros-grid');
 fetchBitcoin('https://economia.awesomeapi.com.br/json/daily/BTC-BRL/0', '.btc-preco');
