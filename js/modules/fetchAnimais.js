@@ -34,6 +34,9 @@ export default function fetchAnimais(url, target) {
       const animaisResponse = await fetch(url);
       // Transforma a resposta em json
       const animaisJSON = await animaisResponse.json();
+      // Como a API está hospedada em repositório gratuito
+      // ele faz umas modificações no arquivo, inserindo metadados,
+      // por isso o acesso a propriedade record.
       animaisJSON.record.forEach(animal => preencherAnimais(animal));
       animaAnimaisNumero();
     } catch (erro) {
