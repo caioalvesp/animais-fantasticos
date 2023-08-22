@@ -29,7 +29,5 @@ initDropdownMenu();
 initMenuMobile();
 initFuncionamento();
 
-initAnimacaoScroll();
-
 fetchAnimais('https://api.jsonbin.io/v3/b/64dccf398e4aa6225ed0e290', '.numeros-grid');
 fetchBitcoin('https://economia.awesomeapi.com.br/json/daily/BTC-BRL/0', '.btc-preco');
