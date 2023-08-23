@@ -4,11 +4,11 @@ import TabNav from './modules/tabnav.js';
 import Modal from './modules/modal.js';
 import Tooltip from './modules/tooltip.js';
 import DropdownMenu from './modules/dropdown-menu.js';
-import initFuncionamento from './modules/funcionamento.js';
 import fetchBitcoin from './modules/fetchBitcoin.js';
 import fetchAnimais from './modules/fetchAnimais.js';
 import ScrollAnima from './modules/scroll-anima.js';
 import MenuMobile from './modules/menu-mobile.js';
+import Funcionamento from './modules/funcionamento.js';
 
 const accordion = new Accordion('[data-anime="accordion"] dt');
 accordion.init();
@@ -31,7 +31,8 @@ dropdownMenu.init();
 const menuMobile = new MenuMobile('[data-menu="button"]', '[data-menu="list"]');
 menuMobile.init();
 
-initFuncionamento();
+const funcionamento = new Funcionamento('[data-semana]');
+funcionamento.init();
 
 fetchAnimais('https://api.jsonbin.io/v3/b/64dccf398e4aa6225ed0e290', '.numeros-grid');
 fetchBitcoin('https://economia.awesomeapi.com.br/json/daily/BTC-BRL/0', '.btc-preco');
