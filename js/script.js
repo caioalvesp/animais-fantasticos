@@ -9,6 +9,7 @@ import fetchAnimais from './modules/fetchAnimais.js';
 import ScrollAnima from './modules/scroll-anima.js';
 import MenuMobile from './modules/menu-mobile.js';
 import Funcionamento from './modules/funcionamento.js';
+import SlideNav from './modules/slide.js';
 
 const accordion = new Accordion('[data-anime="accordion"] dt');
 accordion.init();
@@ -36,3 +37,7 @@ funcionamento.init();
 
 fetchAnimais('https://api.jsonbin.io/v3/b/64dccf398e4aa6225ed0e290', '.numeros-grid');
 fetchBitcoin('https://economia.awesomeapi.com.br/json/daily/BTC-BRL/0', '.btc-preco');
+
+const slide = new SlideNav('.slide', '.slide-wrapper');
+slide.init();
+slide.addControl('.custom-controls');
